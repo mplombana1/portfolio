@@ -324,9 +324,13 @@ body {
     flex-direction: column;
     align-items: center;
     margin-top: 5em;
+    margin-bottom:5em;
   }
   .landing-info .column {
     height: 12em;
+  }
+  .scroll-button {
+    margin-bottom:9em;
   }
   .landing-about {
     margin: 0;
@@ -401,5 +405,11 @@ body {
   .projects-section .cards .card {
     margin-bottom: 2em;
     margin-left: 0;
+  }
+  .footer {
+    height:25%;
+  }
+  .footer .links {
+    margin-top:20%;
   }
 }
