@@ -409,7 +409,18 @@ body {
   .footer {
     height:25%;
   }
+  .footer .copyrite {
+    display: none;
+  }
   .footer .links {
     margin-top:20%;
+  }
+}
+
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) {
+  .footer .links {
+    margin-right:4em;
   }
 }
