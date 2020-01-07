@@ -1,13 +1,13 @@
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  html,
-  body {
-    height: 100%;
-    scroll-behavior: smooth;
-  }
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -70,11 +70,11 @@ body {
 }
 
 .landing-info {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin-top: 9em;
-    margin-bottom: 13em;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 9em;
+  margin-bottom: 13em;
 }
 .landing-info .column {
   display: flex;
@@ -89,8 +89,10 @@ body {
 .landing-about {
   display: flex;
   margin: 0 18em 8em 15em;
-  width:923px;
+  /* width:923px; */
   font-weight: 500;
+  justify-content: center;
+  align-items: center;
 }
 .landing-about .column-one {
   width: 52%;
@@ -103,17 +105,17 @@ body {
 }
 
 .landing-about .column-two {
-  width:46%;
+  width: 46%;
 }
 
-.scroll-button{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 16em;
-    cursor: pointer;
+.scroll-button {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 16em;
+  cursor: pointer;
 }
-.scroll-button:hover{
-    color:#FFB621;
+.scroll-button:hover {
+  color: #ffb621;
 }
 /* ABOUT ME SECTION */
 
@@ -132,7 +134,12 @@ body {
 }
 .about-header {
   width: 50%;
-  margin-top: 4em;
+  /* margin-top: 4em; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4em;
 }
 
 .about-header span,
@@ -141,7 +148,7 @@ body {
   padding-left: 20%;
   padding-right: 20%;
   color: #fff;
-  font-family: "Playfair Display";
+  /* font-family: "Playfair Display"; */
   line-height: 1.5em;
 }
 .about-header #firstname {
@@ -152,11 +159,11 @@ body {
 }
 
 .project-info {
-    display: flex;
-    height: 19em;
-    width: 100%;
-    background: #dedede;
-    padding-top: 4em;
+  display: flex;
+  height: 19em;
+  width: 100%;
+  background: #dedede;
+  padding-top: 4em;
 }
 .project-info .projects {
   width: 50%;
@@ -179,7 +186,7 @@ body {
 }
 .project-info #project-number {
   color: #0095ff;
-  font-size: 200px;
+  font-size: 150px;
   margin-right: 80px;
 }
 .project-info #project-plus {
@@ -245,44 +252,78 @@ body {
   opacity: 1;
 }
 
+.projects-section {
+  height: 700px;
+
+  background: #fff;
+}
+.projects-section .cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1em;
+}
+.projects-section .cards .card {
+  height: 465px;
+  width: 300px;
+  background: #fff;
+  box-shadow: -1px 10px 28px -3px #19191973;
+  border: 1px solid #d9d9d9;
+  border-radius: 6px;
+  margin-left: 1em;
+}
+.projects-section .cards .card img {
+  width: 300px;
+  height: 191px;
+  border-radius: 5px;
+  margin-top: -1px;
+}
+.projects-section .cards .card h4 {
+  color: #0095ff;
+}
+
 .footer {
   widows: 100%;
   height: 2em;
-  background: #191919;
-  position: relative;
+  /* position: relative; */
   padding-top: 1em;
 }
-.footer .copyrite{
-    float:left;
-    margin-left:3em;
+.footer .copyrite {
+  float: left;
+  margin-left: 3em;
 }
 .footer .links {
-    float:right;
-    display: flex;
-    margin-right: 3em;
+  float: right;
+  display: flex;
+  margin-right: 3em;
 }
 .footer .links .link {
-    margin-right:3em;
+  margin-right: 3em;
 }
 .footer .links .link a {
-    color:#fff;
+  color: #fff;
 }
 .footer .links .link a:hover {
-    color:#FFB621;
-    cursor: pointer;
+  color: #ffb621;
+  cursor: pointer;
 }
-
-.grayscale {
+*/ .grayscale {
   filter: grayscale(100%);
 }
 
 @media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .gradient-border {
+    width: 80%;
+    margin-left: 1em;
+    text-align: center;
+  }
   .landing-info {
     display: flex;
     text-align: center;
     justify-content: center;
-    margin-top: 15em;
-    margin-bottom: 13em;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5em;
   }
   .landing-info .column {
     height: 12em;
@@ -318,16 +359,20 @@ body {
   .about-header {
     width: 100%;
     margin-top: 1em;
+    height: 400px;
   }
   .about-header p {
     text-align: center;
     padding: 0 12px;
   }
   .project-info {
-    height: auto;
+    height: 80%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+  .project-info #project-number {
+    margin-right: 0;
   }
   .project-info .projects {
     width: 100%;
@@ -337,14 +382,24 @@ body {
   .project-info .project-about {
     width: 100%;
     padding-top: 0;
-    padding-bottom:3em;
+    padding-bottom: 3em;
   }
   .project-info .project-about .header span {
     margin: 0;
   }
-  .applications .card{
-      width:100%;
-      height:100%;
+  .applications .card {
+    width: 100%;
+    height: 100%;
   }
-
+  .projects-section {
+    height: auto;
+    padding-bottom: 7em;
+  }
+  .cards {
+    flex-direction: column;
+  }
+  .projects-section .cards .card {
+    margin-bottom: 2em;
+    margin-left: 0;
+  }
 }
